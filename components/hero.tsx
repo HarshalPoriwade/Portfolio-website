@@ -40,7 +40,7 @@ export default function Hero() {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link
-                href="https://drive.google.com/file/d/1xRRRJdJW4_EFoDslJVYIyxNm0gpyujI4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xOzIIYgwifWzv5WbBcZ5-Vqi3XWMCw4b/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -62,7 +62,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://www.linkedin.com/in/harshal-poriwade-96a863373/" target="_blank">
+              <Link href="https://www.linkedin.com/in/harshalporiwade" target="_blank">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>

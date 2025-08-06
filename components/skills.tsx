@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge"
 
 const skills = {
   languages: ["Python", "C++"],
-  libraries: ["TensorFlow", "PyTorch", "FastAPI", "Scikit-learn", "OpenCV", "Pydantic"],
-  databases: ["MySQL", "SQLite", "MongoDB"],
+  frameworks: ["TensorFlow", "PyTorch", "FastAPI", "Scikit-learn", "OpenCV", "Pydantic"],
+  databases: ["MySQL"],
   tools: ["Git", "GitHub", "Kaggle", "Google Colab", "Postman"],
 }
 
@@ -65,9 +65,9 @@ export default function Skills() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Libraries & Frameworks</h3>
+            <h3 className="text-xl font-semibold">Frameworks & Libraries</h3>
             <div className="flex flex-wrap gap-2">
-              {skills.libraries.map((skill) => (
+              {skills.frameworks.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
                   <Badge variant="default" className="text-base py-1.5 px-3">
                     {skill}

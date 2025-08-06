@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Film, Globe, Headphones } from 'lucide-react'
+import { Github, Film, Globe, Headphones, Car } from 'lucide-react'
 import Link from "next/link"
 
 const projects = [
@@ -13,7 +13,7 @@ const projects = [
     id: 1,
     title: "DeepFake Detection",
     description:
-      "Developed a machine learning-based system for detecting deep-fakes in images and videos. Implemented multiple feature extraction techniques and trained classifiers to differentiate real from manipulated media. Collaborated as a co-author on a research paper, validated models on benchmark datasets.",
+      "Developed a machine learning-based system for detecting deep-fakes in images and videos. Implemented multiple feature extraction techniques and trained classifiers to differentiate real from manipulated media. Collaborated as a co-author on a research paper, validated models on benchmark datasets, and focused on practical tools for media integrity verification.",
     techStack: ["Python", "Jupyter Notebook", "Scikit-learn", "pandas"],
     github: "https://github.com/HarshalPoriwade/DeepFake-Detection.git",
     icon: <Film className="h-10 w-10 text-primary" />,
@@ -22,18 +22,27 @@ const projects = [
     id: 2,
     title: "Car Price Predictor",
     description:
-      "Designed and implemented a machine learning model to predict the resale price of used cars based on key features. Used regression models including Linear Regression, optimizing for accuracy and generalization. Integrated the model into an interactive web app using Streamlit.",
+      "Designed and implemented a machine learning model to predict the resale price of used cars based on key features such as brand, model, year, fuel type and more. Used a cleaned data set of car specifications to train regression models, including Linear Regression, optimizing for accuracy and generalization. Integrated the model into an interactive web app using Streamlit for real-time car price predictions.",
     techStack: ["Python", "Jupyter Notebook", "scikit-learn", "pandas", "Streamlit"],
-    github: "https://github.com/HarshalPoriwade/CarPricePredictor",
-    icon: <Globe className="h-10 w-10 text-primary" />,
+    github: "https://github.com/HarshalPoriwade/car_price_predictor",
+    icon: <Car className="h-10 w-10 text-primary" />,
   },
   {
     id: 3,
     title: "Movie Recommendation System",
     description:
-      "Developed a machine learning-based recommendation engine for generating personalized movie suggestions. Utilized the TMDB 5000 Movies and Credits datasets for constructing a comprehensive content and metadata-based recommendation pipeline.",
+      "Developed a machine learning-based recommendation engine for generating personalized movie suggestions. Utilized the TMDB 5000 Movies and Credits datasets for constructing a comprehensive content and metadata-based recommendation pipeline. Implemented multiple feature extraction and preprocessing steps to capture relevant movie attributes for improved recommendations.",
     techStack: ["Python", "Jupyter Notebook", "scikit-learn", "pandas"],
     github: "https://github.com/HarshalPoriwade/MovieRecommendationSystem",
+    icon: <Globe className="h-10 w-10 text-primary" />,
+  },
+  {
+    id: 4,
+    title: "Audio Translation System",
+    description:
+      "Designed an audio-to-audio translation tool using speech recognition, TTS, and translation APIs. Supports live input, file upload, and language selection for seamless multilingual communication.",
+    techStack: ["Python", "speech recognition APIs", "TTS", "Translation APIs"],
+    github: "https://github.com/HarshalPoriwade/Audio_Translation.git",
     icon: <Headphones className="h-10 w-10 text-primary" />,
   },
 ]
@@ -76,14 +85,14 @@ export default function Projects() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {projects.map((project) => (
             <motion.div key={project.id} variants={itemVariants}>
               <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="flex flex-row items-center gap-4">
                   <div className="bg-muted rounded-full p-3">{project.icon}</div>
-                  <CardTitle>{project.title}</CardTitle>
+                  <CardTitle className="text-lg">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <CardDescription className="text-base mb-4">{project.description}</CardDescription>

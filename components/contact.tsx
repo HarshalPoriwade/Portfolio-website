@@ -61,11 +61,11 @@ export default function Contact() {
                 <div>
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
                   <Link
-                    href="https://www.linkedin.com/in/harshal-poriwade-96a863373/"
+                    href="https://www.linkedin.com/in/harshalporiwade"
                     target="_blank"
                     className="font-medium hover:text-primary transition-colors"
                   >
-                    harshal-poriwade-96a863373
+                    harshalporiwade
                   </Link>
                 </div>
               </div>
