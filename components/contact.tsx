@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Github, Linkedin } from "lucide-react"
+import { Mail, Github, Linkedin, Phone } from 'lucide-react'
 import Link from "next/link"
 
 export default function Contact() {
@@ -38,6 +38,18 @@ export default function Contact() {
                   <p className="text-sm text-muted-foreground">Email</p>
                   <Link href="mailto:hporiwade@gmail.com" className="font-medium hover:text-primary transition-colors">
                     hporiwade@gmail.com
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/10 p-3 rounded-full">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <Link href="tel:+918446250363" className="font-medium hover:text-primary transition-colors">
+                    +91 8446250363
                   </Link>
                 </div>
               </div>

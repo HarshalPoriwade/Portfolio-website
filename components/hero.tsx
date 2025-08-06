@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowRight, Download, Github, Linkedin } from "lucide-react"
+import { ArrowRight, Download, Github, Linkedin } from 'lucide-react'
 import Link from "next/link"
 
 export default function Hero() {

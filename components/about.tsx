@@ -22,10 +22,9 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tighter">About Me</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
           <p className="text-lg leading-relaxed">
-            I'm a curious and driven final-year student passionate about technology and problem-solving. I thrive on
-            building with Python, FastAPI, and ML, and I'm currently co-authoring a research paper on detecting
-            deepfakes. I enjoy learning new things and collaborating on projects that push the boundaries of tech to
-            solve real-world challenges.
+            Passionate final-year engineering student with a strong foundation in Python, FastAPI, and machine learning. 
+            Currently co-authoring a research paper on deepfake detection using advanced AI techniques. Interested in solving 
+            real-world problems through data-driven solutions and collaborative innovation.
           </p>
         </motion.div>
       </div>

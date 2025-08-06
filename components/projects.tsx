@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Film, Globe, Headphones } from "lucide-react"
+import { Github, Film, Globe, Headphones } from 'lucide-react'
 import Link from "next/link"
 
 const projects = [
@@ -13,27 +13,27 @@ const projects = [
     id: 1,
     title: "DeepFake Detection",
     description:
-      "Developed a machine learning system to detect deepfakes in images and videos using feature extraction and ensemble classifiers. Co-authored a related research paper.",
-    techStack: ["Python", "Scikit-learn", "Jupyter Notebook", "pandas"],
+      "Developed a machine learning-based system for detecting deep-fakes in images and videos. Implemented multiple feature extraction techniques and trained classifiers to differentiate real from manipulated media. Collaborated as a co-author on a research paper, validated models on benchmark datasets.",
+    techStack: ["Python", "Jupyter Notebook", "Scikit-learn", "pandas"],
     github: "https://github.com/HarshalPoriwade/DeepFake-Detection.git",
     icon: <Film className="h-10 w-10 text-primary" />,
   },
   {
     id: 2,
-    title: "Movie Recommendation System",
+    title: "Car Price Predictor",
     description:
-      "Built a personalized recommendation engine using TMDB datasets and ML techniques to suggest relevant movies.",
-    techStack: ["Python", "scikit-learn", "pandas", "Jupyter Notebook"],
-    github: "https://github.com/HarshalPoriwade/MovieRecommendationSystem",
+      "Designed and implemented a machine learning model to predict the resale price of used cars based on key features. Used regression models including Linear Regression, optimizing for accuracy and generalization. Integrated the model into an interactive web app using Streamlit.",
+    techStack: ["Python", "Jupyter Notebook", "scikit-learn", "pandas", "Streamlit"],
+    github: "https://github.com/HarshalPoriwade/CarPricePredictor",
     icon: <Globe className="h-10 w-10 text-primary" />,
   },
   {
     id: 3,
-    title: "Audio Translation System",
+    title: "Movie Recommendation System",
     description:
-      "Designed an audio-to-audio translation tool using speech recognition, TTS, and translation APIs. Supports live input, file upload, and language selection.",
-    techStack: ["Python", "speech recognition APIs"],
-    github: "https://github.com/HarshalPoriwade/Audio_Translation.git",
+      "Developed a machine learning-based recommendation engine for generating personalized movie suggestions. Utilized the TMDB 5000 Movies and Credits datasets for constructing a comprehensive content and metadata-based recommendation pipeline.",
+    techStack: ["Python", "Jupyter Notebook", "scikit-learn", "pandas"],
+    github: "https://github.com/HarshalPoriwade/MovieRecommendationSystem",
     icon: <Headphones className="h-10 w-10 text-primary" />,
   },
 ]
