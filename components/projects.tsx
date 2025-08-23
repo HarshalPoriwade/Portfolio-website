@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Film, Globe, Headphones, Car } from 'lucide-react'
+import { Github, Film, Globe, Headphones, Car } from "lucide-react"
 import Link from "next/link"
 
 const projects = [
@@ -73,7 +73,12 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-16 md:py-24">
+    <section id="projects" className="relative py-16 md:py-24">
+      <div className="absolute inset-0 -z-10 opacity-25">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,hsl(188_94%_45%)_2px,transparent_0)] bg-[size:32px_32px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
+      </div>
+
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-6 mb-12">
           <h2 className="text-3xl font-bold tracking-tighter">Projects</h2>

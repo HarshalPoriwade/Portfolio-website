@@ -2,13 +2,16 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowRight, Download, Github, Linkedin } from 'lucide-react'
+import { ArrowRight, Download, Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 
 export default function Hero() {
   return (
     <section id="home" className="relative py-20 md:py-32 overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_25%_at_50%_50%,var(--primary-50)_0%,transparent_100%)] dark:bg-[radial-gradient(45%_25%_at_50%_50%,rgba(16,185,129,0.05)_0%,transparent_100%)]"></div>
+      <div className="absolute inset-0 -z-10 opacity-30">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,hsl(188_94%_45%)_1px,transparent_0)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background"></div>
+      </div>
 
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-8">
@@ -20,7 +23,7 @@ export default function Hero() {
           >
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter">Harshal Poriwade</h1>
             <p className="text-xl md:text-2xl font-medium text-primary">
-              Building AI-Powered Solutions with Python & Curiosity
+              Building ML Solutions with Python, FastAPI & Innovation
             </p>
             <p className="text-muted-foreground max-w-[600px] mx-auto">
               Final-year CSE Student | ML Enthusiast | Deepfake Researcher
