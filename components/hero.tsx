@@ -8,8 +8,8 @@ import Link from "next/link"
 export default function Hero() {
   return (
     <section id="home" className="relative py-20 md:py-32 overflow-hidden">
-      <div className="absolute inset-0 -z-10 opacity-30">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,hsl(188_94%_45%)_1px,transparent_0)] bg-[size:24px_24px]"></div>
+      <div className="absolute inset-0 -z-10 opacity-40 dark:opacity-30">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,hsl(188_94%_42%)_1px,transparent_0)] dark:bg-[radial-gradient(circle_at_1px_1px,hsl(188_85%_55%)_1px,transparent_0)] bg-[size:24px_24px]"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background"></div>
       </div>
 

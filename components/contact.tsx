@@ -15,8 +15,8 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-16 md:py-24">
-      <div className="absolute inset-0 -z-10 opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(60deg,hsl(188_94%_45%)_1px,transparent_1px),linear-gradient(120deg,hsl(188_94%_45%)_1px,transparent_1px)] bg-[size:28px_28px]"></div>
+      <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
+        <div className="absolute inset-0 bg-[linear-gradient(60deg,hsl(188_94%_42%)_1px,transparent_1px),linear-gradient(120deg,hsl(188_94%_42%)_1px,transparent_1px)] dark:bg-[linear-gradient(60deg,hsl(188_85%_55%)_1px,transparent_1px),linear-gradient(120deg,hsl(188_85%_55%)_1px,transparent_1px)] bg-[size:28px_28px]"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
       </div>
 
@@ -33,7 +33,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="max-w-md mx-auto"
         >
-          <Card>
+          <Card className="bg-card/80 backdrop-blur-sm border-border/50">
             <CardContent className="pt-6 space-y-6">
               <div className="flex items-center gap-4">
                 <div className="bg-primary/10 p-3 rounded-full">

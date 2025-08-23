@@ -74,8 +74,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-16 md:py-24">
-      <div className="absolute inset-0 -z-10 opacity-25">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,hsl(188_94%_45%)_2px,transparent_0)] bg-[size:32px_32px]"></div>
+      <div className="absolute inset-0 -z-10 opacity-35 dark:opacity-25">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,hsl(188_94%_42%)_2px,transparent_0)] dark:bg-[radial-gradient(circle_at_2px_2px,hsl(188_85%_55%)_2px,transparent_0)] bg-[size:32px_32px]"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
       </div>
 
@@ -94,9 +94,9 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <motion.div key={project.id} variants={itemVariants}>
-              <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
+              <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300 bg-card/80 backdrop-blur-sm border-border/50">
                 <CardHeader className="flex flex-row items-center gap-4">
-                  <div className="bg-muted rounded-full p-3">{project.icon}</div>
+                  <div className="bg-primary/10 rounded-full p-3">{project.icon}</div>
                   <CardTitle className="text-lg">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">

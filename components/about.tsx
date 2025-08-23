@@ -10,10 +10,10 @@ export default function About() {
   })
 
   return (
-    <section id="about" className="relative py-16 md:py-24 bg-muted/30">
-      <div className="absolute inset-0 -z-10 opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,hsl(188_94%_45%)_1px,transparent_1px),linear-gradient(-45deg,hsl(188_94%_45%)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-background/50"></div>
+    <section id="about" className="relative py-16 md:py-24 bg-muted/40">
+      <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,hsl(188_94%_42%)_1px,transparent_1px),linear-gradient(-45deg,hsl(188_94%_42%)_1px,transparent_1px)] dark:bg-[linear-gradient(45deg,hsl(188_85%_55%)_1px,transparent_1px),linear-gradient(-45deg,hsl(188_85%_55%)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60 dark:from-background/50 dark:via-transparent dark:to-background/50"></div>
       </div>
 
       <div className="container px-4 md:px-6">

@@ -37,10 +37,10 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="relative py-16 md:py-24 bg-muted/30">
-      <div className="absolute inset-0 -z-10 opacity-15">
-        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,hsl(188_94%_45%)_0deg,transparent_60deg,transparent_300deg,hsl(188_94%_45%)_360deg)] bg-[size:60px_60px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-background/70 via-transparent to-background/70"></div>
+    <section id="skills" className="relative py-16 md:py-24 bg-muted/40">
+      <div className="absolute inset-0 -z-10 opacity-25 dark:opacity-15">
+        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,hsl(188_94%_42%)_0deg,transparent_60deg,transparent_300deg,hsl(188_94%_42%)_360deg)] dark:bg-[conic-gradient(from_0deg_at_50%_50%,hsl(188_85%_55%)_0deg,transparent_60deg,transparent_300deg,hsl(188_85%_55%)_360deg)] bg-[size:60px_60px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-transparent to-background/80 dark:from-background/70 dark:via-transparent dark:to-background/70"></div>
       </div>
 
       <div className="container px-4 md:px-6">
