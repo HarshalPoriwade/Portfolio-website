@@ -26,7 +26,7 @@ export default function Hero() {
               Building ML Solutions with Python, FastAPI & Innovation
             </p>
             <p className="text-muted-foreground max-w-[600px] mx-auto">
-              Final-year CSE Student | ML Enthusiast | Deepfake Researcher
+              AI/ML Engineer | Computer Vision & Deep Learning | Production-Grade Systems
             </p>
           </motion.div>
 

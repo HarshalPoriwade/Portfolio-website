@@ -5,10 +5,13 @@ import { useInView } from "react-intersection-observer"
 import { Badge } from "@/components/ui/badge"
 
 const skills = {
-  languages: ["Python", "C++"],
-  frameworks: ["TensorFlow", "PyTorch", "FastAPI", "Scikit-learn", "OpenCV", "Pydantic"],
+  languages: ["Python"],
+  deepLearning: ["PyTorch", "TensorFlow", "Keras", "TFLite", "Vision Transformers (ViT)", "YOLOv8", "EfficientNet", "U-Net", "Grad-CAM (XAI)"],
+  machinelearning: ["Scikit-learn", "SHAP", "Ensemble Learning", "Feature Engineering", "Hyperparameter Tuning"],
+  frameworks: ["FastAPI", "Gunicorn", "Uvicorn", "OpenCV", "Librosa", "HuggingFace Transformers", "Pandas", "NumPy"],
+  deployment: ["TFLite Quantization", "AWS", "Edge Deployment", "Model Optimization", "Pydantic", "Swagger UI"],
+  tools: ["Git", "GitHub", "Roboflow", "Google Colab", "Kaggle", "Jupyter Notebook", "Postman"],
   databases: ["MySQL"],
-  tools: ["Git", "GitHub", "Kaggle", "Google Colab", "Postman"],
 }
 
 export default function Skills() {
@@ -54,12 +57,38 @@ export default function Skills() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="max-w-3xl mx-auto space-y-8"
+          className="max-w-4xl mx-auto space-y-8"
         >
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Languages</h3>
             <div className="flex flex-wrap gap-2">
               {skills.languages.map((skill) => (
+                <motion.div key={skill} variants={itemVariants}>
+                  <Badge variant="default" className="text-base py-1.5 px-3">
+                    {skill}
+                  </Badge>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Deep Learning & Computer Vision</h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.deepLearning.map((skill) => (
+                <motion.div key={skill} variants={itemVariants}>
+                  <Badge variant="default" className="text-base py-1.5 px-3">
+                    {skill}
+                  </Badge>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Machine Learning</h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.machinelearning.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
                   <Badge variant="default" className="text-base py-1.5 px-3">
                     {skill}
@@ -83,9 +112,9 @@ export default function Skills() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Databases</h3>
+            <h3 className="text-xl font-semibold">Deployment & Optimization</h3>
             <div className="flex flex-wrap gap-2">
-              {skills.databases.map((skill) => (
+              {skills.deployment.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
                   <Badge variant="default" className="text-base py-1.5 px-3">
                     {skill}
@@ -99,6 +128,19 @@ export default function Skills() {
             <h3 className="text-xl font-semibold">Tools & Platforms</h3>
             <div className="flex flex-wrap gap-2">
               {skills.tools.map((skill) => (
+                <motion.div key={skill} variants={itemVariants}>
+                  <Badge variant="default" className="text-base py-1.5 px-3">
+                    {skill}
+                  </Badge>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Databases</h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.databases.map((skill) => (
                 <motion.div key={skill} variants={itemVariants}>
                   <Badge variant="default" className="text-base py-1.5 px-3">
                     {skill}

@@ -27,9 +27,11 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tighter">About Me</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
           <p className="text-lg leading-relaxed">
-            Passionate final-year engineering student with a strong foundation in Python, FastAPI, and machine learning.
-            Currently co-authoring a research paper on deepfake detection using advanced AI techniques. Interested in
-            solving real-world problems through data-driven solutions and collaborative innovation.
+            Computer Science graduate with proven expertise in Machine Learning, Deep Learning, and Computer Vision. 
+            Experienced in building and deploying production-grade AI systems using PyTorch, TensorFlow, and FastAPI. 
+            Co-authored published research on multi-modal deepfake detection achieving AUC 0.9958. Passionate about 
+            solving real-world problems through data-driven solutions, scalable API development, and edge deployment. 
+            Currently exploring Large Language Models and transformer-based architectures.
           </p>
         </motion.div>
       </div>
