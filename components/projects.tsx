@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, Film, Globe, Headphones, Car, Waveform } from "lucide-react"
+import { Github, Film, Globe, Headphones, Car, Waves } from "lucide-react"
 import Link from "next/link"
 
 const projects = [
@@ -25,7 +25,7 @@ const projects = [
       "Engineered a 4.48M parameter Frequency-Domain 2D Spectrogram U-Net matching denoising quality of 15M+ parameter models, processing 48kHz audio via STFT with Log1p compression. Built dynamic tf.data pipeline with 16,000 unique audio slices per epoch and two-stage training on extreme SNR [-15dB to 10dB]. Achieved +5.41dB average SNR improvement and deployed as 17.1MB TFLite model with <10ms inference via XNNPACK.",
     techStack: ["TensorFlow", "TFLite", "Python", "Audio DSP", "Librosa", "STFT"],
     github: "https://github.com/HarshalPoriwade/Spectrogram-UNet-Denoiser",
-    icon: <Waveform className="h-10 w-10 text-primary" />,
+    icon: <Waves className="h-10 w-10 text-primary" />,
   },
   {
     id: 3,
