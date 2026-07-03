@@ -40,16 +40,10 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="relative py-16 md:py-24 bg-muted/40">
-      <div className="absolute inset-0 -z-10 opacity-25 dark:opacity-15">
-        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,hsl(188_94%_42%)_0deg,transparent_60deg,transparent_300deg,hsl(188_94%_42%)_360deg)] dark:bg-[conic-gradient(from_0deg_at_50%_50%,hsl(188_85%_55%)_0deg,transparent_60deg,transparent_300deg,hsl(188_85%_55%)_360deg)] bg-[size:60px_60px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-transparent to-background/80 dark:from-background/70 dark:via-transparent dark:to-background/70"></div>
-      </div>
-
+    <section id="skills" className="relative py-20 md:py-32">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-6 mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter">Skills</h2>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+        <div className="space-y-8 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Skills</h2>
         </div>
 
         <motion.div

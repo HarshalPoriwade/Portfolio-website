@@ -10,11 +10,7 @@ export default function About() {
   })
 
   return (
-    <section id="about" className="relative py-16 md:py-24 bg-muted/40">
-      <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,hsl(188_94%_42%)_1px,transparent_1px),linear-gradient(-45deg,hsl(188_94%_42%)_1px,transparent_1px)] dark:bg-[linear-gradient(45deg,hsl(188_85%_55%)_1px,transparent_1px),linear-gradient(-45deg,hsl(188_85%_55%)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60 dark:from-background/50 dark:via-transparent dark:to-background/50"></div>
-      </div>
+    <section id="about" className="relative py-20 md:py-32">
 
       <div className="container px-4 md:px-6">
         <motion.div
@@ -22,11 +18,10 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center space-y-6"
+          className="max-w-3xl mx-auto space-y-8"
         >
-          <h2 className="text-3xl font-bold tracking-tighter">About Me</h2>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
-          <p className="text-lg leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About Me</h2>
+          <p className="text-lg leading-relaxed text-muted-foreground">
             Computer Science graduate with proven expertise in Machine Learning, Deep Learning, and Computer Vision. 
             Experienced in building and deploying production-grade AI systems using PyTorch, TensorFlow, and FastAPI. 
             Co-authored published research on multi-modal deepfake detection achieving AUC 0.9958. Passionate about 
