@@ -64,16 +64,10 @@ export default function Achievements() {
   }
 
   return (
-    <section id="achievements" className="relative py-16 md:py-24 bg-muted/40">
-      <div className="absolute inset-0 -z-10 opacity-25 dark:opacity-15">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(188_94%_42%)_1px,transparent_1px)] dark:bg-[radial-gradient(ellipse_at_center,hsl(188_85%_55%)_1px,transparent_1px)] bg-[size:16px_16px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-background/70 via-transparent to-background/70 dark:from-background/60 dark:via-transparent dark:to-background/60"></div>
-      </div>
-
+    <section id="achievements" className="relative py-20 md:py-32">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-6 mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter">Achievements</h2>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+        <div className="space-y-8 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Achievements</h2>
         </div>
 
         <motion.div
@@ -85,7 +79,7 @@ export default function Achievements() {
         >
           {achievements.map((achievement) => (
             <motion.div key={achievement.id} variants={itemVariants}>
-              <Card className="h-full flex flex-col bg-card/80 backdrop-blur-sm border-border/50">
+              <Card className="h-full flex flex-col border-border/60">
                 <CardHeader className="flex flex-row items-center gap-4">
                   <div className="bg-primary/10 p-2 rounded-full">
                     <Award className="h-5 w-5 text-primary" />

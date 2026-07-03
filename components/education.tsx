@@ -12,16 +12,10 @@ export default function Education() {
   })
 
   return (
-    <section id="education" className="relative py-16 md:py-24">
-      <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(188_94%_42%)_1px,transparent_1px)] dark:bg-[linear-gradient(90deg,hsl(188_85%_55%)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-l from-background via-transparent to-background"></div>
-      </div>
-
+    <section id="education" className="relative py-20 md:py-32">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-6 mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter">Education</h2>
-          <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+        <div className="space-y-8 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Education</h2>
         </div>
 
         <motion.div
@@ -31,7 +25,7 @@ export default function Education() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto"
         >
-          <Card className="bg-card/80 backdrop-blur-sm border-border/50">
+          <Card className="border-border/60">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-3 rounded-full">
                 <GraduationCap className="h-6 w-6 text-primary" />
